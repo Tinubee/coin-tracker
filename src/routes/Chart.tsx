@@ -40,7 +40,7 @@ function Chart({ coinId }: ChartProps) {
           <Link to={`/${coinId}/chart/line`}>Line</Link>
         </Tab>
         <Tab isActive={chartcandleMatch !== null}>
-          <Link to={`/${coinId}/chart/candle`}>Candle</Link>
+          <Link  to={`/${coinId}/chart/candle`}>Candle</Link>
         </Tab>
       </Tabs>
 
@@ -49,7 +49,7 @@ function Chart({ coinId }: ChartProps) {
           <Line coinId={coinId} />
         </Route>
         <Route path={`/:coinId/chart/candle`}>
-          <Candle coinId={coinId} />
+          <Candle  coinId={coinId} />
         </Route>
       </Switch>
     </div>
