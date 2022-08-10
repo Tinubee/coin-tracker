@@ -12,6 +12,8 @@ import styled from "styled-components";
 import { fetchCoinInfo, fetchCoinTickers } from "../api";
 import Chart from "./Chart";
 import Price from "./Price";
+import Mode from "../components/Mode";
+import GoHome from "../components/GoHome";
 
 const Tabs = styled.div`
   display: grid;
@@ -78,6 +80,12 @@ const OverviewItem = styled.div`
 `;
 const Description = styled.p`
   margin: 20px 0px;
+`;
+
+const BtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 interface RouteParams {
@@ -170,6 +178,10 @@ function Coin() {
           {state?.name ? state.name : loading ? "Loading..." : infoData?.name}
         </Title>
       </Header>
+      <BtnContainer>
+        <Mode />
+        <GoHome />
+      </BtnContainer>
       {loading ? (
         <Loader>Loading...</Loader>
       ) : (

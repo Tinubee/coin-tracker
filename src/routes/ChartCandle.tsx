@@ -6,7 +6,6 @@ import { isDarkAtom } from "../atoms";
 
 interface ChartProps {
   coinId: string;
-
 }
 
 interface IHistoryData {
@@ -69,7 +68,7 @@ function Candle({ coinId }: ChartProps) {
               show: false,
             },
             theme: {
-              mode:  isDark ? "dark" : "light",
+              mode: isDark ? "dark" : "light",
             },
             yaxis: {
               show: false,
