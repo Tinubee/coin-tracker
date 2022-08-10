@@ -2,10 +2,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Coin from "./routes/Coin";
 import Coins from "./routes/Coins";
 
-
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/coin-tracker/">
       <Switch>
         <Route path="/:coinId">
           <Coin />
