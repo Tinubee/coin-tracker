@@ -60,5 +60,5 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.25"
   },
-  "homepage": "https://Tinubee.github.io/coin-tracker"
+  "homepage": "https://tinubee.github.io/coin-tracker"
 }
